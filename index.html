@@ -27,13 +27,15 @@
     />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <nav class="header-nav-container">
-          <a class="logo" href="#"><span class="accent">Web</span>Studio</a>
+          <a class="logo" href="./index.html"
+            ><span class="accent">Web</span>Studio</a
+          >
 
           <div class="header-nav-wrapper">
             <ul class="header-nav">
@@ -171,7 +173,7 @@
                   </li>
                   <li>
                     <a
-                      href="./contact.html"
+                      href="./404.html"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                     >
@@ -225,7 +227,7 @@
                   </li>
                   <li>
                     <a
-                      href="./contact.html"
+                      href="./404.html"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                     >
@@ -279,7 +281,7 @@
                   </li>
                   <li>
                     <a
-                      href="./contact.html"
+                      href="./404.html"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                     >
@@ -333,7 +335,7 @@
                   </li>
                   <li>
                     <a
-                      href="./contact.html"
+                      href="./404.html"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                     >
@@ -379,7 +381,7 @@
             <li class="customer-item">
               <a
                 class="customer-link"
-                href="./contact.html"
+                href="./404.html"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
@@ -391,7 +393,7 @@
             <li class="customer-item">
               <a
                 class="customer-link"
-                href="./contact.html"
+                href="./404.html"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
@@ -403,7 +405,7 @@
             <li class="customer-item">
               <a
                 class="customer-link"
-                href="./contact.html"
+                href="./404.html"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
@@ -415,7 +417,7 @@
             <li class="customer-item">
               <a
                 class="customer-link"
-                href="./contact.html"
+                href="./404.html"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
@@ -427,7 +429,7 @@
             <li class="customer-item">
               <a
                 class="customer-link"
-                href="./contact.html"
+                href="./404.html"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
@@ -439,7 +441,7 @@
             <li class="customer-item">
               <a
                 class="customer-link"
-                href="./contact.html"
+                href="./404.html"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
@@ -519,5 +521,35 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="backdrop-content">
+        <button type="button">X</button>
+        <h2 class="backdrop-title">
+          Leave your contacts and we will call you back
+        </h2>
+        <form class="backdrop-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+
+          <label for="message">Message</label>
+          <textarea id="message"></textarea>
+
+          <label for="agreement"
+            >I accept the terms and conditions of the
+            <a href="./contact.html">Privacy Policy</a></label
+          >
+          <input type="checkbox" name="agreement" id="agreement" />
+
+          <button type="submit" class="form-btn">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
