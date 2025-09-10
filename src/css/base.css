@@ -52,12 +52,26 @@ ul {
   padding: 0;
 }
 
+/*! Переделать размеры контейнера */
 .container {
   width: 1128px;
   margin: 0 auto;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 0 32px;
 }
+
+/* @media screen and (min-width: 768px) {
+  .container {
+    width: 1128px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1128px;
+    margin: 0 auto;
+  }
+} */
 
 .active {
   color: var(--ocean, #404bbf) !important;
