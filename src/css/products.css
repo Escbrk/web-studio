@@ -1,8 +1,0 @@
-.product-list {
-  display: flex;
-  column-gap: 24px;
-}
-
-.product-item {
-  width: calc((100% - 48px) / 3);
-}

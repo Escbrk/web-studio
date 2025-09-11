@@ -168,5 +168,13 @@
 <path d="M16 16c4.42 0 8-3.58 8-8s-3.58-8-8-8c-4.42 0-8 3.58-8 8s3.58 8 8 8zM16 20c-5.34 0-16 2.68-16 8v2c0 1.1 0.9 2 2 2h28c1.1 0 2-0.9 2-2v-2c0-5.32-10.66-8-16-8z"></path>
 </symbol>
 
+<symbol id="icon-burger" viewBox="0 0 47 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965"></path>
+</symbol>
+
+<symbol id="icon-telegram" viewBox="0 0 32 32">
+<path d="M32 2.667l-32 15 10.227 3.156 15.773-12.323-11.998 13.488 0.010 0.003-0.012-0.003v7.345l5.735-5.576 7.265 2.242 5-23.333z"></path>
+</symbol>
+
 </defs>
 </svg>
