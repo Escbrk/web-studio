@@ -882,6 +882,11 @@ footer .logo,
     letter-spacing: 0.02em;
   }
 
+  .header-contact:focus,
+  .header-contact:hover {
+    color: var(--ocean, #404bbf);
+  }
+
   .header-nav {
     display: flex;
     column-gap: 40px;
