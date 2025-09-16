@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,13 +19,11 @@
       rel="stylesheet"
     />
 
-    <!-- Normalize.css -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
 
-    <!-- Styles -->
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
@@ -53,7 +50,7 @@
               >
             </li>
             <li>
-              <a class="header-nav-link" href="/contact.html">Contact</a>
+              <a class="header-nav-link" href="/contacts.html">Contact</a>
             </li>
           </ul>
         </nav>
@@ -80,17 +77,55 @@
         <h1 class="visually-hidden">Portfolio</h1>
 
         <ul class="portfolio-list">
-          <li><button class="portfolio-btn" type="button">All</button></li>
-          <li><button class="portfolio-btn" type="button">Web Site</button></li>
-          <li><button class="portfolio-btn" type="button">App</button></li>
-          <li><button class="portfolio-btn" type="button">Design</button></li>
           <li>
-            <button class="portfolio-btn" type="button">Marketing</button>
+            <button
+              class="portfolio-btn"
+              type="button"
+              onclick="(sortList('all'))"
+            >
+              All
+            </button>
+          </li>
+          <li>
+            <button
+              class="portfolio-btn"
+              type="button"
+              onclick="(sortList('web site'))"
+            >
+              Web Site
+            </button>
+          </li>
+          <li>
+            <button
+              class="portfolio-btn"
+              type="button"
+              onclick="(sortList('app'))"
+            >
+              App
+            </button>
+          </li>
+          <li>
+            <button
+              class="portfolio-btn"
+              type="button"
+              onclick="(sortList('design'))"
+            >
+              Design
+            </button>
+          </li>
+          <li>
+            <button
+              class="portfolio-btn"
+              type="button"
+              onclick="(sortList('marketing'))"
+            >
+              Marketing
+            </button>
           </li>
         </ul>
 
         <ul class="portfolio-products">
-          <li class="portfolio-products-item">
+          <li class="portfolio-products-item" data-category="app">
             <div class="overlay-wrapper">
               <img src="./src/img/portfolio/bank_app.jpg" alt="banking_app" />
               <div class="overlay">
@@ -108,7 +143,7 @@
               <p class="portfolio-products-category">App</p>
             </div>
           </li>
-          <li class="portfolio-products-item">
+          <li class="portfolio-products-item" data-category="marketing">
             <div class="overlay-wrapper">
               <img
                 src="./src/img/portfolio/cashless_payment.jpg"
@@ -127,7 +162,7 @@
               <p class="portfolio-products-category">Marketing</p>
             </div>
           </li>
-          <li class="portfolio-products-item">
+          <li class="portfolio-products-item" data-category="app">
             <div class="overlay-wrapper">
               <img
                 src="./src/img/portfolio/meditation_app.jpg"
@@ -146,7 +181,7 @@
               <p class="portfolio-products-category">App</p>
             </div>
           </li>
-          <li class="portfolio-products-item">
+          <li class="portfolio-products-item" data-category="marketing">
             <div class="overlay-wrapper">
               <img
                 src="./src/img/portfolio/taxi_service.jpg"
@@ -165,7 +200,7 @@
               <p class="portfolio-products-category">Marketing</p>
             </div>
           </li>
-          <li class="portfolio-products-item">
+          <li class="portfolio-products-item" data-category="design">
             <div class="overlay-wrapper">
               <img src="./src/img/portfolio/screen.jpg" alt="screen" />
               <div class="overlay">
@@ -181,7 +216,7 @@
               <p class="portfolio-products-category">Design</p>
             </div>
           </li>
-          <li class="portfolio-products-item">
+          <li class="portfolio-products-item" data-category="marketing">
             <div class="overlay-wrapper">
               <img
                 src="./src/img/portfolio/online_courses.jpg"
@@ -200,7 +235,7 @@
               <p class="portfolio-products-category">Marketing</p>
             </div>
           </li>
-          <li class="portfolio-products-item">
+          <li class="portfolio-products-item" data-category="design">
             <div class="overlay-wrapper">
               <img
                 src="./src/img/portfolio/instagram_stories.jpg"
@@ -221,7 +256,7 @@
               <p class="portfolio-products-category">Design</p>
             </div>
           </li>
-          <li class="portfolio-products-item">
+          <li class="portfolio-products-item" data-category="web site">
             <div class="overlay-wrapper">
               <img
                 src="./src/img/portfolio/organic_food.jpg"
@@ -240,7 +275,7 @@
               <p class="portfolio-products-category">Web Site</p>
             </div>
           </li>
-          <li class="portfolio-products-item">
+          <li class="portfolio-products-item" data-category="web site">
             <div class="overlay-wrapper">
               <img
                 src="./src/img/portfolio/fresh_coffee.jpg"

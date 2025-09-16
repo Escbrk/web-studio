@@ -82,9 +82,13 @@ ul {
   min-width: 300px;
 }
 
-.active {
-  color: var(--ocean, #404bbf) !important;
+.header-nav-link.active {
+  color: var(--ocean, #404bbf);
   position: relative;
+}
+
+.pages-list-link.active {
+  color: var(--ocean, #404bbf);
 }
 
 .active::after {
@@ -350,9 +354,14 @@ ul {
 
 .portfolio-list {
   display: flex;
-  justify-content: center;
-  column-gap: 24px;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+
+  @media screen and (max-width: 344px) {
+    gap: 16px 12px;
+    font-size: 12px;
+  }
 }
 
 .portfolio-btn {
@@ -375,16 +384,6 @@ ul {
   background: var(--ocean, #404bbf);
   box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 1px 0 rgba(0, 0, 0, 0.08),
     0 2px 2px 0 rgba(0, 0, 0, 0.12);
-}
-
-.portfolio-products {
-  display: flex;
-  gap: 48px 24px;
-  flex-wrap: wrap;
-}
-
-.portfolio-products-item {
-  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-text-wrapper {
@@ -774,6 +773,19 @@ footer .logo,
   position: relative;
 }
 
+.not-found-img {
+  min-width: 300px;
+}
+
+.portfolio-btn.active {
+  background-color: var(--ocean);
+  color: var(--white);
+}
+
+.portfolio-btn.active::after {
+  content: none;
+}
+
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px),
   screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
@@ -823,6 +835,10 @@ footer .logo,
 
   .footer-description {
     margin: 0 auto;
+  }
+
+  .portfolio-products-item:not(:last-child) {
+    margin-bottom: 48px;
   }
 }
 
@@ -973,6 +989,22 @@ footer .logo,
   .order-form-input {
     min-width: 360px;
   }
+
+  .portfolio-products {
+    display: flex;
+    gap: 72px 24px;
+    flex-wrap: wrap;
+  }
+
+  .portfolio-products-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .portfolio-list {
+    justify-content: center;
+    gap: 0 24px;
+    margin-bottom: 64px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
@@ -1060,6 +1092,18 @@ footer .logo,
     flex-direction: row;
     column-gap: 80px;
   }
+
+  .portfolio-products {
+    gap: 48px 24px;
+  }
+
+  .portfolio-products-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .portfolio-list {
+    margin-bottom: 72px;
+  }
 }
 
 .mobile-close-btn {
@@ -1125,6 +1169,10 @@ footer .logo,
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
+
+  @media screen and (max-width: 385px) {
+    font-size: 26px;
+  }
 }
 
 .mobile-contact-item:last-child .mobile-contact-link {

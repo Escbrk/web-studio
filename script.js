@@ -39,3 +39,37 @@ if (closeModalBtn[1]) {
     body.classList.remove("is-modal-open");
   });
 }
+
+const btns = document.querySelectorAll(".portfolio-btn");
+btns.forEach((btn) => {
+  console.log(btn.textContent.toLowerCase());
+  if (btn.textContent.toLowerCase().trim() === "all") {
+    btn.classList.add("active");
+  } else {
+    btn.classList.remove("active");
+  }
+});
+
+const sortList = (category) => {
+  const items = document.querySelectorAll(".portfolio-products li");
+  const btns = document.querySelectorAll(".portfolio-btn");
+
+  btns.forEach((btn) => {
+    if (
+      btn.textContent.toLowerCase().trim() === category &&
+      !btn.classList.contains("active")
+    ) {
+      btn.classList.add("active");
+    } else {
+      btn.classList.remove("active");
+    }
+  });
+
+  items.forEach((item) => {
+    if (category === "all" || item.dataset.category === category) {
+      item.style.display = "list-item";
+    } else {
+      item.style.display = "none";
+    }
+  });
+};
