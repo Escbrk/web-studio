@@ -719,6 +719,7 @@ footer .logo,
   background-image: url("../img/checkmark.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 10px;
   border-color: transparent;
 }
 
