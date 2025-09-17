@@ -719,9 +719,6 @@ footer .logo,
   background-image: url("../img/checkmark.svg");
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-color: transparent;
 }
 
