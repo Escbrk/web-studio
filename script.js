@@ -42,7 +42,6 @@ if (closeModalBtn[1]) {
 
 const btns = document.querySelectorAll(".portfolio-btn");
 btns.forEach((btn) => {
-  console.log(btn.textContent.toLowerCase());
   if (btn.textContent.toLowerCase().trim() === "all") {
     btn.classList.add("active");
   } else {
