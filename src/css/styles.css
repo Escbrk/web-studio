@@ -159,6 +159,7 @@ ul {
   background-size: cover;
   padding-top: 112px;
   padding-bottom: 112px;
+  height: 432px;
 }
 
 .hero-title {
@@ -502,6 +503,8 @@ footer .logo,
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-form-btn:hover,
+.footer-form-btn:focus,
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--ocean, #404bbf);
@@ -528,6 +531,7 @@ footer .logo,
   border: none;
   border-radius: 4px;
   background-color: var(--iris);
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-input {
@@ -862,6 +866,7 @@ footer .logo,
 
 @media screen and (min-width: 768px) {
   .hero {
+    height: 436px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
