@@ -716,7 +716,9 @@ footer .logo,
 }
 
 .checkbox-original:checked + .custom-checkbox-label::before {
-  content: url("../img/checkmark.svg");
+  background-image: url("../img/checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
